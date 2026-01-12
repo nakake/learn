@@ -1,6 +1,9 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import TBNVisualization from './pages/TBNVisualization'
+import DotProductLighting from './pages/DotProductLighting'
+import BRDFVisualization from './pages/BRDF'
+import FresnelVisualization from './pages/Fresnel'
 
 function App() {
   const location = useLocation()
@@ -27,6 +30,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tbn" element={<TBNVisualization />} />
+        <Route path="/dot-product" element={<DotProductLighting />} />
+        <Route path="/brdf" element={<BRDFVisualization />} />
+        <Route path="/fresnel" element={<FresnelVisualization />} />
       </Routes>
     </div>
   )

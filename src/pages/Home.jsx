@@ -7,7 +7,24 @@ const pages = [
     description: 'Tangent, Bitangent, Normal行列の計算過程をインタラクティブに学ぶ',
     category: '3Dグラフィックス',
   },
-  // 新しいページを追加する場合はここに追加
+  {
+    path: '/dot-product',
+    title: 'ドット積による光の強度計算',
+    description: '法線と光源方向のドット積でライティングがどう計算されるかを視覚的に理解',
+    category: '3Dグラフィックス',
+  },
+  {
+    path: '/brdf',
+    title: 'BRDF（双方向反射率分布関数）',
+    description: 'GGX、Blinn-Phong、Lambertなど各種BRDFモデルの可視化と比較',
+    category: '3Dグラフィックス',
+  },
+  {
+    path: '/fresnel',
+    title: 'フレネル反射',
+    description: 'Schlick近似とフレネル方程式による反射率の角度依存性を理解',
+    category: '3Dグラフィックス',
+  },
 ]
 
 const Home = () => {
